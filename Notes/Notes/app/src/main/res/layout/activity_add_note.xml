@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+<androidx.appcompat.widget.Toolbar
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="?attr/colorPrimary"
+android:elevation="4dp"
+android:title="Add Note"
+android:titleTextColor="@android:color/white" />
+
+<com.google.android.material.textfield.TextInputEditText
+android:id="@+id/titleEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/note_title"
+android:layout_below="@id/toolbar"
+android:layout_margin="16dp"
+android:background="@drawable/rounded_edittext" />
+
+<com.google.android.material.textfield.TextInputEditText
+android:id="@+id/contentEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/note_content"
+android:layout_below="@id/titleEditText"
+android:layout_margin="16dp"
+android:background="@drawable/rounded_edittext" />
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/saveButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentEnd="true"
+android:layout_below="@id/contentEditText"
+android:layout_margin="16dp"
+android:text="@string/save"
+android:textColor="@android:color/black" />
+    </RelativeLayout>
